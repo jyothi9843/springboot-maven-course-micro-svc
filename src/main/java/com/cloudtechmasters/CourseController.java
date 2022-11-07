@@ -12,8 +12,7 @@ public class CourseController {
     private static final Logger logger = LoggerFactory.getLogger(CourseController.class);
 //create two endpoints getAllAwsServices and getAllDevopsTools
     @GetMapping("/getAllAwsServices")
-    public List<String> getAllAwsServices(){
-        System.out.print("Hello!");  
+    public List<String> getAllAwsServices(){  
         logger.info("added for failing sonar build");
         return Arrays.asList("ec2","iam","rds","ecr","eks");
     }
