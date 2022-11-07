@@ -13,6 +13,7 @@ public class CourseController {
 //create two endpoints getAllAwsServices and getAllDevopsTools
     @GetMapping("/getAllAwsServices")
     public List<String> getAllAwsServices(){
+        System.out.print("Hello!");  
         logger.info("added for failing sonar build");
         return Arrays.asList("ec2","iam","rds","ecr","eks");
     }
